@@ -1,0 +1,61 @@
+.aboutme {
+  background: #f6f3ff;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(108, 74, 182, 0.06);
+  margin-top: 2rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.aboutme:hover {
+  box-shadow: 0 6px 32px rgba(108, 74, 182, 0.13);
+  transform: translateY(-4px) scale(1.01);
+}
+
+.aboutme__title {
+  color: #6c4ab6;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-left: 1.2rem;
+}
+
+.aboutme__title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 70%;
+  background: linear-gradient(180deg, #b39ddb 0%, #6c4ab6 100%);
+  border-radius: 4px;
+}
+
+.aboutme__summary {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.aboutme__skills h3 {
+  color: #6c4ab6;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutme__skills ul {
+  list-style: disc inside;
+  padding-left: 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.aboutme__skills li {
+  margin-bottom: 0.4rem;
+} 

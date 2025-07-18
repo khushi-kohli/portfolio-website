@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #101624 0%, #181c2f 100%);
+  color: #e0e6ff;
+  min-height: 100vh;
+  letter-spacing: 0.01em;
+}
+
+.App {
+  min-height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(24, 28, 47, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(12px) saturate(1.5);
+  -webkit-backdrop-filter: blur(12px) saturate(1.5);
+  border-radius: 18px;
+  border: 1.5px solid rgba(80, 200, 255, 0.18);
+}
+
+/* Neon accent utility */
+.neon {
+  text-shadow: 0 0 8px #00ffe7, 0 0 16px #7f5cff, 0 0 2px #00ffe7;
+  color: #00ffe7;
+}
+
+/* Neon button */
+.neon-btn {
+  background: linear-gradient(90deg, #00ffe7 0%, #7f5cff 100%);
+  color: #181c2f;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.6rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 0 16px #00ffe7, 0 0 32px #7f5cff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+}
+
+.neon-btn:hover {
+  transform: scale(1.07) translateY(-2px);
+  box-shadow: 0 0 32px #00ffe7, 0 0 64px #7f5cff;
+}
+
+/* Section fade-in for dark mode */
+section, .aboutme, .education, .projects, .contact {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
